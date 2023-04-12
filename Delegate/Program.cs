@@ -1,16 +1,17 @@
-﻿using System;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 
-namespace Delegate
+namespace ConsoleApp1
 {
     internal class Program
     {
         //------------------------------------------------------------
         //Task1
-
+        //public static Action action;
         //static void Main(string[] args)
         //{
-        //    Action action = PrintSomething;
+        //    action = PrintSomething;
         //    action();
         //}
         //static void PrintSomething()
@@ -20,10 +21,10 @@ namespace Delegate
 
         //-------------------------------------------------------------
         //Task2
-
+        //public static Func<int, int> func;
         //static void Main(string[] args)
         //{
-        //    Func<int,int> func = Power;
+        //    func = Power;
         //    int.TryParse(Console.ReadLine(), out int number);
         //    Console.WriteLine(func(number));
         //}
@@ -35,11 +36,12 @@ namespace Delegate
         //-------------------------------------------------------------
         //Task3
 
+        //public static Predicate<int> pre;
         //static void Main(string[] args)
         //{
-        //    Predicate<int> pre = new Predicate<int>(Even);
+        //    pre += Even;
         //    List<int> list = new List<int>() { 1, 2, 3, 4 };
-        //    for(int i=0; i<list.Count; i++)
+        //    for (int i = 0; i < list.Count; i++)
         //    {
         //        if (Even(list[i]))
         //        {
@@ -54,10 +56,10 @@ namespace Delegate
 
         //-------------------------------------------------------------
         //Task4
-
+        //public static Action<int> action;
         //static void Main(string[] args)
         //{
-        //    Action<int> action = new Action<int>(Increment);
+        //    action += Increment;
         //    List<int> list = new List<int>() { 1, 2, 3, 4 };
         //    for (int i = 0; i < list.Count; i++)
         //    {
@@ -66,22 +68,23 @@ namespace Delegate
         //}
         //static void Increment(int number)
         //{
-        //    Console.WriteLine(number+1);
+        //    Console.WriteLine(number + 1);
         //}
 
 
         //-------------------------------------------------------------
         //Task5
 
+        //public static Action<int> action1;
+        //public static Action<string> action2;
         //static void Main(string[] args)
         //{
-        //    Action<int> action1 = new Action<int>(Increment);
-        //    Action<int> action2 = new Action<int>(Increment);
-        //    Action<int> action3 = new Action<int>(Increment);
-        //    List<Action<int>> list = new List<Action<int>>();
+        //    action1 += Increment;
+        //    action2 += AddMr;
+        //    action1+= AddSalary;
+        //    ArrayList list = new ArrayList();
         //    list.Add(action1);
         //    list.Add(action2);
-        //    list.Add(action3);
         //}
         //static void Increment(int number)
         //{
@@ -102,11 +105,12 @@ namespace Delegate
         //-------------------------------------------------------------
         //Task6
 
+        //public static Predicate<string> pre;
         //static void Main(string[] args)
         //{
-        //    List<string> list = new List<string>() { "sdsff","asifhfsdfsdf", "sad", "asdf","sd", "fsdhfasdhfgahsfadfasgfashdhf"};
-        //    Predicate<string> pre = new Predicate<string>(StringLen);
-        //    for(int i=0;i<list.Count;i++)
+        //    List<string> list = new List<string>() { "sdsff", "asifhfsdfsdf", "sad", "asdf", "sd", "fsdhfasdhfgahsfadfasgfashdhf" };
+        //    pre += StringLen;
+        //    for (int i = 0; i < list.Count; i++)
         //    {
         //        if (pre(list[i]))
         //        {
@@ -115,13 +119,10 @@ namespace Delegate
         //    }
         //}
         //static bool StringLen(string str)
-        //{ 
-        //    return str.Length >= 5; 
+        //{
+        //    return str.Length >= 5;
         //}
 
 
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
-        //-------------------------------------------------------------
     }
 }
